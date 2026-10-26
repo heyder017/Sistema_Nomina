@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sistema-nomina"
+version = "1.0.0"
+description = "Sistema de nómina orientado a objetos para empleados asalariados, por horas, por comisión y temporales."
+requires-python = ">=3.10"
+readme = "README.md"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
+addopts = "-q"
